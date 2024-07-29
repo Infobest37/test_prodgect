@@ -5,11 +5,10 @@ grades[1] = sum(grades[1]) / len(grades[1])
 grades[2] = sum(grades[2]) / len(grades[2])
 grades[3] = sum(grades[3]) / len(grades[3])
 grades[4] = sum(grades[4]) / len(grades[4])
-students_1 = {'Aaron': grades[0], 'Bilbo': grades[1],'Johnny': grades[2], 'Khendrik': grades[3],'Steve': grades[4]}
-
+students_2 = sorted(students)
+print(students_2[0])
+students_1 = {students_2[0]: grades[0], students_2[1]: grades[1],students_2[2]: grades[2], students_2[3]: grades[3],
+              students_2[4]: grades[4]}
 print(students_1)
-
-print(grades)
-print(students)
 
 
