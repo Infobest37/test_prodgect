@@ -9,7 +9,7 @@ def send_email( messag, recipient, sender="university.help@gmail.com"):
     elif sender == "university.help@gmail.com":
        print(f"Письмо успешно отправлено с адреса  {sender} на адрес {recipient}")
 
-    elif recipient not in sender:
+    else:
         print(f"НЕСТАНДАРТНЫЙ ОТПРАВИТЕЛЬ! Письмо отправлено с адреса {sender} на адрес {recipient}")
 
 
