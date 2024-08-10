@@ -15,10 +15,15 @@
 # Вывести значение переменной calls на экран(в консоль).
 
 calls = 0
+d = 0
 def count_calls(): # Сщздаем функцию счетчик
-    global calls
+    global calls, d
     calls += 1
     return calls
+def count_calls_1(): # Сщздаем функцию счетчик
+    global d
+    d += 1
+    return d
 
 
 def string_info(string):
@@ -27,20 +32,30 @@ def string_info(string):
     str_upper = string.upper() # делаем в верхнем регистре строку
     str_lower = string.lower() # делаем в нижнем регистре строку
     count_calls() # считаем количество вызовов
-    return str_1, str_upper, str_lower
+    return str_upper, str_lower,str_1
+def string_info_1(a, string):
 
+    return string.index( a )
 
 
 
 
 def is_contains(string,list_to_search):
-    count_calls()
+    count_calls_1()
     for i in list_to_search:
-        if i in string.lower():
+        if i in string:
             return True
     return False
+print(string_info_1('a',"Capybara"))
 print(string_info('Capybara'))
 print(string_info('Armageddon'))
-print(is_contains('Urban', ['ban', 'BaNaN', 'urBAN'])) # Urban ~ urBAN
-print(is_contains('cycle', ['recycling', 'cyclic'])) # No matches
+print(is_contains(["nsmmso"], ['ban', 'BaNaN', 'urBAN'])) # Urban ~ urBAN
+print(is_contains('cycle', ['recycling', 'cyclic']))
+
+
+
+
 print(calls)
+print(d)
+
+
