@@ -15,4 +15,3 @@ def print_params1(**kyi):
     print(kyi)
 values_list_2 = {"a":4,"b":67}
 print_params1(**values_list_2)
-values_list_2 = [4,67]
