@@ -3,7 +3,7 @@ def send_email( messag, recipient, sender="university.help@gmail.com"):
     if recipient in sender:
        print("Нельзя отправить письмо самому себе!")
 
-    elif "@" not in recipient or "@" not in sender and not recipient.endswith(cheсk) or not sender.endswith(cheсk):
+    elif "@" not in recipient or "@" not in sender or not recipient.endswith(cheсk) or not sender.endswith(cheсk):
        print(f"Невозможно отправить письмо с адреса {sender} на адрес {recipient}")
 
     elif sender == "university.help@gmail.com":
