@@ -4,8 +4,7 @@ def single_root_words(root_word,*other_words):
     for word in other_words:
         if root_word in word:
             same_words.append(word)
-        elif (root_word.upper() in word or word.upper() in root_word or root_word.lower() in word or word.lower()
-              in root_word or word in root_word):
+        elif root_word.upper() in word.upper() or word.upper() in root_word.upper():
             same_words.append(word)
     return same_words
 
