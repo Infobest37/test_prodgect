@@ -64,6 +64,9 @@
 #
 #
 #
+
+
+
 def calculate_structure_sum(data_structure):
   sum_1 = 0
   if isinstance(data_structure, (int, float)):
