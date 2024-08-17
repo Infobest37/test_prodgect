@@ -1,10 +1,9 @@
 def divide(first, second):
-    try:
-        result = first/second
-    except ZeroDivisionError:
+    if second == 0:
         return "Ошибка"
+    result = first/second
     return result
-# print(divide(2, 2))
+#print(divide(2, 0))
 
 
 
