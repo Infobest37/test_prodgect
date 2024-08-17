@@ -1,6 +1,11 @@
 def divide(first, second):
-    if second == 0:
-        print("Ошибка")
-    return first/second
+    try:
+        result = first/second
+    except ZeroDivisionError:
+        return "Ошибка"
+    return result
+# print(divide(2, 2))
 
-print(divide(2,0))
+
+
+
