@@ -91,6 +91,7 @@ def calculate_structure_sum(data_structure):
     return sum_1
 
 
+
 # Пример использования
 
 data_structure = [
